@@ -9,10 +9,16 @@
  */
 import { Center } from "../../components/center";
 const Conversations = () => {
-
+  const list = [
+    {
+      info: '你好',
+      name: '张三',
+      imageUrl: ''
+    }
+  ]
   return (
     <div style={{ display: "flex", height: '100%' }}>
-      <Center></Center>
+      <Center title="信息" showIcon={true} list={list}></Center>
       <div style={{ flex: 5 }}>
         111
       </div>
